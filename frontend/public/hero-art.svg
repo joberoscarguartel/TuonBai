@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 240" fill="none">
+  <defs>
+    <pattern id="pixels" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0v20" stroke="#75e6c2" stroke-opacity=".18" />
+    </pattern>
+    <linearGradient id="tiles" x1="110" y1="0" x2="525" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102820" stop-opacity="0" /><stop offset=".55" stop-color="#164437" /><stop offset="1" stop-color="#112b26" stop-opacity=".65" />
+    </linearGradient>
+    <linearGradient id="serpent" x1="178" y1="160" x2="454" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26936e" /><stop offset=".65" stop-color="#4cca9a" /><stop offset="1" stop-color="#a1f5bc" />
+    </linearGradient>
+    <radialGradient id="shine">
+      <stop stop-color="#38af85" stop-opacity=".33" /><stop offset="1" stop-color="#38af85" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gridFade">
+      <stop stop-color="white" stop-opacity="0" /><stop offset=".4" stop-color="white" /><stop offset="1" stop-color="white" />
+    </linearGradient>
+    <mask id="gridMask"><rect width="565" height="240" fill="url(#gridFade)" /></mask>
+  </defs>
+  <rect width="565" height="240" fill="url(#tiles)" />
+  <ellipse cx="324" cy="128" rx="230" ry="124" fill="url(#shine)" />
+  <rect width="565" height="240" fill="url(#pixels)" mask="url(#gridMask)" />
+  <path d="M172 181h84v-63h62v35h65V94h53" stroke="#0b1b16" stroke-width="32" stroke-linejoin="round" opacity=".75" />
+  <path d="M172 175h84v-63h62v35h65V88h53" stroke="url(#serpent)" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M174 170h77v-60a3 3 0 0 1 3-3h61m10 35h53V89" stroke="#b3f2c4" stroke-opacity=".43" stroke-width="3" stroke-linecap="round" />
+  <path d="M187 164v22m21-22v22m21-22v22m16-35h22m-22-21h22m10-29v22m20-22v22m28 13v22m21-22v22m20-22v22m6-35h22m-22-22h22m10-24v22" stroke="#27765e" stroke-opacity=".52" stroke-width="2" />
+  <rect x="415" y="68" width="49" height="39" rx="12" fill="#a1f5bc" />
+  <rect x="445" y="77" width="6" height="7" rx="2" fill="#12382a" />
+  <rect x="445" y="92" width="6" height="7" rx="2" fill="#12382a" />
+  <path d="M492 64h13v5h5v13h-5v5h-13v-5h-5V69h5z" fill="#ffbd78" />
+  <path d="M496 64v-5h8" stroke="#9bedad" stroke-width="3" />
+  <path d="M293 54h5m-2.5-2.5v5m177 100h8m-4-4v8m-274-71h8m-4-4v8m311 89h5m-2.5-2.5v5" stroke="#8ef5cd" stroke-width="2" opacity=".56" />
+  <path d="M378 39h4v4h-4zm-26 163h4v4h-4zM487 114h4v4h-4zm-267 19h4v4h-4zm273 71h4v4h-4z" fill="#84d0a9" opacity=".56" />
+  <path d="M168 43h35m284 166h40M106 208h31" stroke="#80dcbb" stroke-opacity=".35" stroke-dasharray="3 5" />
+</svg>
