@@ -1,6 +1,7 @@
 import Button from './Button.jsx'
 import HeroArt from './HeroArt.jsx'
 import Icon from './Icon.jsx'
+import ModeCard from './ModeCard.jsx'
 import ScoreList from './ScoreList.jsx'
 import SetRow from './SetRow.jsx'
 import { modes } from '../study.js'
@@ -21,13 +22,7 @@ export default function Arcade({ sets, history, onMode, onOpen, onNavigate, onRe
           <h2 id="modes-heading">Game modes</h2>
         </div>
         <div className="mode-grid">
-          {modes.map((mode) => (
-            <button className={'mode-card ' + mode.id} key={mode.id} onClick={() => onMode(mode.id)}>
-              <span className="mode-icon"><Icon name={mode.icon} size={24} /></span>
-              <span className="row-label"><strong>{mode.name}</strong><small>{mode.hint}</small></span>
-              <Icon name="chevron" size={17} />
-            </button>
-          ))}
+          {modes.map((mode) => <ModeCard key={mode.id} mode={mode} onOpen={onMode} />)}
         </div>
       </section>
       <div className="dashboard-grid arcade-section">
